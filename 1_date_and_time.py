@@ -26,7 +26,7 @@ def str_2_datetime(date_string):
     Эта функция вызывается автоматически при запуске скрипта в консоли
     В ней надо заменить pass на ваш код
     """
-    date_dt = datetime.strptime(date_string,'%d/%m/%Y %H:%M:%S.%f')
+    date_dt = datetime.strptime(date_string,'%d/%m/%y %H:%M:%S.%f')
     return date_dt
 
 if __name__ == "__main__":
