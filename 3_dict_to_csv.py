@@ -22,7 +22,7 @@ def main():
     Эта функция вызывается автоматически при запуске скрипта в консоли
     В ней надо заменить pass на ваш код
     """
-with open('export.csv', 'w', encoding='UTF-8') as f:
+with open('export.csv', 'w') as f:
     fields = ['name', 'age', 'job', 'gender']
     writer = csv.DictWriter(f, fields, delimiter=';')
     writer.writeheader()

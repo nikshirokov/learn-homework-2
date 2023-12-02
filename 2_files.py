@@ -16,7 +16,7 @@ def main():
     Эта функция вызывается автоматически при запуске скрипта в консоли
     В ней надо заменить pass на ваш код
     """
-    with open('referat.txt', 'r', encoding='utf-8') as f:
+    with open('referat.txt', 'r') as f:
         file = f.read()
     print(len(file))
     print(len(file.split()))
